@@ -99,3 +99,33 @@ a:hover{
     font-size: 18px;
     -webkit-text-stroke-width: 1.5px;
 }
+
+#separator{
+    position: @Position;
+    top: 650px;
+    width: 1465px;
+}
+
+#subscribebutton{
+    @LeftMargin: 570px;
+    position: @Position;
+    left: @LeftMargin;
+    top: 500px;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    background-color: @RedColor;
+    color: white;
+    border: 1px solid @RedColor;
+}
+
+#separator > div{
+    margin-left: 500px;
+    font-size: 12px;
+}
+
+#separator > hr{
+    margin-left: 100px;
+    margin-right: 100px;
+}
