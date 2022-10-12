@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  z-index: 2;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding-right: 40px;
+}
+#nav {
+  color: black;
+  padding-right: 40px;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.image {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+#offers {
+  position: absolute;
+  left: 150px;
+  top: 200px;
+  font-size: 50px;
+}
+#div1 {
+  position: absolute;
+  left: 150px;
+  top: 400px;
+  font-size: 15px;
+  -webkit-text-stroke-width: 0.5px;
+}
+#mail {
+  position: absolute;
+  left: 150px;
+  top: 500px;
+  border-radius: 15px;
+  width: 400px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+::placeholder {
+  font-size: 18px;
+  color: black;
+}
+#div2 {
+  position: absolute;
+  left: 150px;
+  top: 600px;
+  font-size: 18px;
+  -webkit-text-stroke-width: 1.5px;
+}

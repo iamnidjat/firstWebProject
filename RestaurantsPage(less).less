@@ -1,0 +1,115 @@
+@BlackColor: black;
+@RedColor: red;
+@Position: absolute;
+@FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// .flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+body{
+     font-family: @FontFamily;
+}
+
+.display()
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: @RedColor;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;   
+}
+
+.navigation-container {
+    .display();
+    flex-direction: row;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    color: @BlackColor;
+    padding-right: 40px;
+}
+
+
+#nav{
+    color: @BlackColor;
+    padding-right: 40px;
+    .text-decorations();
+}
+
+a:hover{
+    .text-decorations();
+}
+
+.image{
+    position: @Position;
+    left: 150px;
+    top: 20px;
+}
+
+#select-city{
+    position: @Position;
+    left: 150px;
+    top: 180px;
+    font-size: 40px;
+    @FontFamily: Arial, Helvetica, sans-serif;
+    font-family: @FontFamily;
+}
+
+.custom-select{
+    position: @Position;
+    left: 150px;
+    top: 270px;
+    font-family: Arial;
+}
+
+select{
+    background-color: rgb(255, 172, 17);
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 25px;
+}
+
+
+.tooltip .tooltiptext {
+    width: 150px;
+    background-color: red;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 0;
+    position: @Position;
+    left: 470px;
+    top: 250px;
+}
+  
+// option:hover .tooltiptext {
+//     visibility: hidden;
+// }
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent red transparent transparent;
+  }
+
+

@@ -1,0 +1,115 @@
+@BlackColor: black;
+@RedColor: red;
+@Position: absolute;
+@FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@LeftMargin: 120px;
+
+// .flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+body {
+    font-family: @FontFamily;
+    height: 100%;
+    background: linear-gradient(to left, #eac646 50%, #ffffff 50%);    
+}
+
+.display()
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: @RedColor;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;   
+}
+
+.navigation-container {
+    .display();
+    flex-direction: row;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    color: @BlackColor;
+    padding-right: 40px;
+}
+
+
+#nav{
+    color: @BlackColor;
+    padding-right: 40px;
+    .text-decorations();
+}
+
+a:hover{
+    .text-decorations();
+}
+
+.image{
+    position: @Position;
+    left: 150px;
+    top: 20px;
+}
+
+.image2{
+    position: @Position;
+    left: @LeftMargin;
+    top: 120px;
+}
+
+#order-title{
+    position: @Position;
+    left: @LeftMargin;
+    top: 230px;
+    font-size: 40px;
+}
+
+#div1{
+    position: @Position;
+    left: @LeftMargin;
+    top: 430px;
+    font-size: 20px;
+    color:burlywood;
+    -webkit-text-stroke-width: 2px;
+}
+
+#div2{
+    @FontFamily: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: @Position;
+    left: @LeftMargin;
+    top: 470px;
+    font-size: 20px;
+    font-family: @FontFamily;
+}
+
+#button1{
+    position: @Position;
+    left: @LeftMargin;
+    top: 600px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid transparent;
+}
+#span1{
+    position: @Position;
+    left: @LeftMargin;
+    top: 670px;
+    font-size: 17px;
+    -webkit-text-stroke-width: 1.5px;
+}

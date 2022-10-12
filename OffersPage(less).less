@@ -1,0 +1,101 @@
+@BlackColor: black;
+@RedColor: red;
+@Position: absolute;
+@FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@LeftMargin: 150px;
+
+// .flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+body {
+    font-family: @FontFamily;
+}
+
+.display()
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: @RedColor;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;   
+}
+
+.navigation-container {
+    .display();
+    flex-direction: row;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    color: @BlackColor;
+    padding-right: 40px;
+}
+
+
+#nav{
+    color: @BlackColor;
+    padding-right: 40px;
+    .text-decorations();
+}
+
+a:hover{
+    .text-decorations();
+}
+
+.image{
+    position: @Position;
+    left: @LeftMargin;
+    top: 20px;
+}
+
+
+#offers{
+    position: @Position;
+    left: @LeftMargin;
+    top: 200px;
+    font-size: 50px;
+}
+
+#div1{
+    position: @Position;
+    left: @LeftMargin;
+    top: 400px;
+    font-size: 15px;
+    -webkit-text-stroke-width: .5px;
+}
+
+#mail{
+    position: @Position;
+    left: @LeftMargin;
+    top: 500px;
+    border-radius: 15px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+::placeholder{
+    font-size: 18px;
+    color: black;
+}
+
+#div2{
+    position: @Position;
+    left: @LeftMargin;
+    top: 600px;
+    font-size: 18px;
+    -webkit-text-stroke-width: 1.5px;
+}

@@ -1,0 +1,90 @@
+@BlackColor: black;
+@YellowColor: yellow;
+@RedColor: red;
+@Position: absolute;
+@FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// .flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+body{
+    font-family: @FontFamily;
+    height: 100%;
+    background: linear-gradient(to left, #ffffff 60%, #e6b70c 40%);
+}
+
+.display()
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navigation-container {
+    .display();
+    flex-direction: row;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    color: @BlackColor;
+    padding-right: 40px;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: @YellowColor;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+#value-meal{
+    position: @Position;
+    left:150px;
+    top: 200px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #DB0007;
+    font-size: 60px;
+}
+
+#announcment-div1{
+    position: @Position;
+    left:150px;
+    top: 320px;
+    color: @RedColor;
+    font-size: 55px;
+    -webkit-text-stroke-width: 2px;
+}
+
+#announcment-div2{
+    position: @Position;
+    left:150px;
+    top: 380px;
+    color: @RedColor;
+    font-size: 55px;
+    -webkit-text-stroke-width: 2px;
+}
+
+.image{
+    position: @Position;
+    left: 150px;
+    top: 15px;
+}
+
+#background-video{
+    width: 59%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 600px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}

@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  background: linear-gradient(to left, #eac646 50%, #ffffff 50%);
+}
+.navigation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  z-index: 2;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding-right: 40px;
+}
+#nav {
+  color: black;
+  padding-right: 40px;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.image {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+.image2 {
+  position: absolute;
+  left: 120px;
+  top: 120px;
+}
+#order-title {
+  position: absolute;
+  left: 120px;
+  top: 230px;
+  font-size: 40px;
+}
+#div1 {
+  position: absolute;
+  left: 120px;
+  top: 430px;
+  font-size: 20px;
+  color: burlywood;
+  -webkit-text-stroke-width: 2px;
+}
+#div2 {
+  position: absolute;
+  left: 120px;
+  top: 470px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#button1 {
+  position: absolute;
+  left: 120px;
+  top: 600px;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid transparent;
+}
+#span1 {
+  position: absolute;
+  left: 120px;
+  top: 670px;
+  font-size: 17px;
+  -webkit-text-stroke-width: 1.5px;
+}
