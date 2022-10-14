@@ -1,0 +1,194 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  z-index: 2;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding-right: 40px;
+}
+#nav {
+  color: black;
+  padding-right: 40px;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.image {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+.image2 {
+  position: absolute;
+  left: 150px;
+  top: 280px;
+  z-index: 1;
+  width: 900px;
+  height: 420px;
+}
+.image3 {
+  position: absolute;
+  left: 230px;
+  top: 350px;
+  width: 500px;
+  height: 300px;
+  z-index: 2;
+}
+#div1 {
+  position: absolute;
+  left: 150px;
+  top: 120px;
+  font-size: 45px;
+}
+#div2 {
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  position: absolute;
+  left: 850px;
+  top: 320px;
+  z-index: 2;
+  width: 500px;
+  height: 350px;
+}
+#subdiv21 {
+  padding: 8px;
+  font-size: 30px;
+  -webkit-text-stroke-width: 2px;
+  text-decoration: none;
+}
+#div3 {
+  margin: 10px;
+  font-size: 20px;
+  padding: 5px;
+}
+#subspan:hover {
+  color: red;
+  text-decoration: none;
+}
+#secondlink {
+  margin-left: 15px;
+  color: red;
+  font-size: 18px;
+  -webkit-text-stroke-width: 1px;
+}
+#secondlink:hover {
+  color: black;
+  text-decoration: none;
+}
+#newsdiv1 {
+  position: absolute;
+  left: 150px;
+  top: 720px;
+  border: 1px solid transparent;
+  background-color: orange;
+  height: 360px;
+  width: 260px;
+  text-align: left;
+}
+#newsdiv2 {
+  position: absolute;
+  left: 470px;
+  top: 720px;
+  border: 1px solid transparent;
+  background-color: orange;
+  height: 360px;
+  width: 260px;
+  text-align: left;
+}
+#newsdiv3 {
+  position: absolute;
+  left: 790px;
+  top: 720px;
+  border: 1px solid transparent;
+  background-color: orange;
+  height: 360px;
+  width: 260px;
+  text-align: left;
+}
+.blog-image,
+.blog-image2,
+.blog-image3 {
+  width: 260px;
+  height: 200px;
+}
+#subdiv,
+#subdiv2,
+#subdiv3 {
+  padding: 20px;
+}
+#blog3,
+#blog6,
+#blog9 {
+  color: red;
+}
+#blog2:hover,
+#blog5:hover,
+#blog8:hover {
+  text-decoration: none;
+}
+#blog3:hover,
+#blog6:hover,
+#blog9:hover {
+  text-decoration: none;
+}
+#rednewsdiv1 {
+  position: absolute;
+  left: 150px;
+  top: 900px;
+  z-index: 2;
+  width: 90px;
+  height: 30px;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  -webkit-text-stroke-width: 1px;
+}
+#rednewsdiv2 {
+  position: absolute;
+  left: 150px;
+  top: 900px;
+  z-index: 2;
+  width: 90px;
+  height: 30px;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  -webkit-text-stroke-width: 1px;
+  left: 470px;
+}
+#rednewsdiv3 {
+  position: absolute;
+  left: 150px;
+  top: 900px;
+  z-index: 2;
+  width: 90px;
+  height: 30px;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  -webkit-text-stroke-width: 1px;
+  left: 790px;
+}
