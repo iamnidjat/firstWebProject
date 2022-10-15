@@ -11,6 +11,7 @@
 //     align-items: center;
 // }
 body {
+    animation: opacityAnimation 3s;
     font-family: @FontFamily;
     background: url(@BackgroundURL) no-repeat left top, linear-gradient(rgb(235,235,235), rgb(235,235,235));
 }
@@ -61,6 +62,15 @@ a:hover{
     left: @LeftMargin;
     top: 20px;
 }
+
+// .image2{
+//     @LeftMargin: 1000px;
+//     position: @Position;
+//     left: @LeftMargin;
+//     top: 200px;
+//     height: 400px;
+//     width: 400px !important;
+// }
 
 #offers{
     position: @Position;
@@ -129,4 +139,14 @@ a:hover{
 
 #subscribebutton:hover{
     background-color: @BlackColor;
+}
+
+@keyframes opacityAnimation
+{
+    from{
+        opacity: 0;
+    };
+    to{
+        opacity: 1;
+    };
 }

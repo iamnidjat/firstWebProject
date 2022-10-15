@@ -11,7 +11,9 @@
 //     align-items: center;
 // }
 body {
+    animation: opacityAnimation 3s;
     font-family: @FontFamily;
+    background-image: url(https://mcdindia.com/wp-content/uploads/2020/05/bg-happy-meal-app2x.jpg);
 }
 
 .display()
@@ -187,11 +189,7 @@ a:hover{
     color: red;
 }
 
-#blog2:hover, #blog5:hover, #blog8:hover{
-    text-decoration: none;
-}
-
-#blog3:hover, #blog6:hover, #blog9:hover{
+#blog3:hover, #blog6:hover, #blog9:hover, #blog2:hover, #blog5:hover, #blog8:hover, #blog10:hover, #blog11:hover, #blog12:hover{
     text-decoration: none;
 }
 
@@ -226,4 +224,41 @@ a:hover{
     .rednewsdivcust();
     @LeftMargin: 790px;
     left: @LeftMargin;
+}
+
+#newsdiv4
+{
+    @LeftMargin: 1080px;
+    position: @Position;
+    left: @LeftMargin;
+    top: 720px;
+    border: 1px solid transparent;
+    background-color: white;
+    height: @NewsDivHeight;
+    width: 320px;
+    text-align: left;
+}
+
+#blog10div, #blog11div, #blog12div
+{
+    padding: 10px;
+    -webkit-text-stroke-width: 1px;
+    font-size: 15px;
+}
+
+#latestnewsdiv
+{
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+@keyframes opacityAnimation
+{
+    from{
+        opacity: 0;
+    };
+    to{
+        opacity: 1;
+    };
 }

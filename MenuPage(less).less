@@ -1,0 +1,130 @@
+@BlackColor: black;
+@RedColor: red;
+@Position: absolute;
+@FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@LeftMargin: 120px;
+
+// .flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+body {
+    animation: opacityAnimation 3s;
+    font-family: @FontFamily;
+}
+
+.position()
+{
+    position: @Position;
+    left: 150px;
+}
+
+.display()
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: @RedColor;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;   
+}
+
+.navigation-container {
+    .display();
+    flex-direction: row;
+    position: @Position;
+    top: 15px;
+    right: 100px;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    color: @BlackColor;
+    padding-right: 40px;
+}
+
+
+#nav{
+    color: @BlackColor;
+    padding-right: 40px;
+    .text-decorations();
+}
+
+a:hover{
+    .text-decorations();
+}
+
+.image{
+    position: @Position;
+    left: 150px;
+    top: 20px;
+}
+
+#burgersandwraps{
+    .text-decorations();
+    .position();
+    top: 180px;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #DB0007;
+}
+
+#nameofburger
+{
+    .position();
+    top: 250px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #141212;
+    font-size: 35px;
+}
+
+#annc
+{
+    .position();
+    top: 330px;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(182, 154, 129);
+}
+
+#desc{
+    .position();
+    top: 380px;
+    font-size: 18px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgb(5, 5, 5);
+}
+
+#servingsize
+{
+    .position();
+    top: 510px;
+    font-size: 18px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgb(5, 5, 5);
+}
+
+#subspan{
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(5, 5, 5);
+}
+
+#content{
+    .position();
+    top: 570px;
+    font-size: 18px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgb(5, 5, 5);
+}
+
+#subdiv{
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: red;
+}

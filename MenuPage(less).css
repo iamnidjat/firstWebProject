@@ -1,0 +1,98 @@
+body {
+  animation: opacityAnimation 3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  z-index: 2;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding-right: 40px;
+}
+#nav {
+  color: black;
+  padding-right: 40px;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.image {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+#burgersandwraps {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  position: absolute;
+  left: 150px;
+  top: 180px;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #DB0007;
+}
+#nameofburger {
+  position: absolute;
+  left: 150px;
+  top: 250px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #141212;
+  font-size: 35px;
+}
+#annc {
+  position: absolute;
+  left: 150px;
+  top: 330px;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #b69a81;
+}
+#desc {
+  position: absolute;
+  left: 150px;
+  top: 380px;
+  font-size: 18px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #050505;
+}
+#servingsize {
+  position: absolute;
+  left: 150px;
+  top: 510px;
+  font-size: 18px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #050505;
+}
+#subspan {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #050505;
+}
+#content {
+  position: absolute;
+  left: 150px;
+  top: 570px;
+  font-size: 18px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #050505;
+}
+#subdiv {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: red;
+}

@@ -10,9 +10,10 @@
 //     align-items: center;
 // }
 body {
+    animation: opacityAnimation 3s;
     font-family: @FontFamily;
     height: 100%;
-    background: linear-gradient(to left, #eac646 50%, #ffffff 50%);    
+    background: linear-gradient(to left, yellow 50%, #fff 50%);    
 }
 
 .display()
@@ -106,14 +107,25 @@ a:hover{
     height: 50px;
     border: 1px solid transparent;
 }
-#span1{
-    position: @Position;
-    left: @LeftMargin;
-    top: 670px;
-    font-size: 17px;
-    -webkit-text-stroke-width: 1.5px;
-}
 
 #button1:hover{
     background-color: @BlackColor;
+}
+
+.image3{
+    @LeftMargin: 800px;
+    position: @Position;
+    left: @LeftMargin;
+    top: 200px;
+    width: 650px;
+}
+
+@keyframes opacityAnimation
+{
+    from{
+        opacity: 0;
+    };
+    to{
+        opacity: 1;
+    };
 }

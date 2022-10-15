@@ -9,9 +9,14 @@
 //     align-items: center;
 // }
 body{
+    animation: opacityAnimation 3s;
     font-family: @FontFamily;
-    background: url(https://mcdindia.com/wp-content/uploads/2020/02/stores-background.jpg) no-repeat;
-    background-size: 100%;
+    // background: url(https://mcdindia.com/wp-content/uploads/2020/02/stores-background.jpg) no-repeat;
+    // background-size: 100%;
+    height: 100%;
+    background-image: url(https://mcdindia.com/wp-content/uploads/2020/02/stores-background.jpg), url(https://mcdindia.com/wp-content/uploads/2020/02/happy-meal-celebration.svg);
+    background-position: right 10px, top 450px left 100px;
+    background-repeat: no-repeat;
 }
 
 .display()
@@ -116,3 +121,12 @@ select{
   }
 
 
+  @keyframes opacityAnimation
+  {
+      from{
+          opacity: 0;
+      };
+      to{
+          opacity: 1;
+      };
+  }

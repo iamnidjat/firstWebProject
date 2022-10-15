@@ -9,6 +9,7 @@
 //     align-items: center;
 // }
 body{
+    animation: opacityAnimation 3s;
     font-family: @FontFamily;
     background-image: url(https://mcdindia.com/wp-content/uploads/2020/05/bg-happy-meal-app2x.jpg);
 }
@@ -227,4 +228,14 @@ a:hover{
     top: 680px;
     height: 35px;
     width: 100px;
+}
+
+@keyframes opacityAnimation
+{
+    from{
+        opacity: 0;
+    };
+    to{
+        opacity: 1;
+    };
 }

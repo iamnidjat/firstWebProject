@@ -1,4 +1,5 @@
 body {
+  animation: opacityAnimation 3s;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: url("https://mcdindia.com/wp-content/uploads/2019/12/subscribe-bg-1.png") no-repeat left top, linear-gradient(#ebebeb, #ebebeb);
 }
@@ -93,4 +94,12 @@ a:hover {
 }
 #subscribebutton:hover {
   background-color: black;
+}
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
