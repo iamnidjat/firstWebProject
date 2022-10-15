@@ -12,6 +12,9 @@
 body {
     animation: opacityAnimation 3s;
     font-family: @FontFamily;
+    background-image: url(https://mcdindia.com/wp-content/uploads/2019/12/m.svg), url(https://mcdindia.com/wp-content/uploads/2019/12/melting-cheese-1.svg);
+    background-position: right top -100px, left 100px top;
+    background-repeat: no-repeat;
 }
 
 .position()
@@ -67,6 +70,12 @@ a:hover{
     top: 20px;
 }
 
+.image2{
+    position: @Position;
+    right: 150px;
+    top: 250px;
+}
+
 #burgersandwraps{
     .text-decorations();
     .position();
@@ -78,17 +87,25 @@ a:hover{
 
 #nameofburger
 {
-    .position();
+    position: @Position;
     top: 250px;
+    left: 0px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #141212;
     font-size: 35px;
+    border: 1px solid rgb(255, 166, 0);
+    background-color: rgb(249, 184, 63);
+    width: 630px;
+    height: 70px;
+    text-align: center;
+    padding-top: 5px;
+    border-bottom-right-radius: 100px; 
 }
 
 #annc
 {
     .position();
-    top: 330px;
+    top: 350px;
     font-size: 20px;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgb(182, 154, 129);
@@ -96,7 +113,7 @@ a:hover{
 
 #desc{
     .position();
-    top: 380px;
+    top: 400px;
     font-size: 18px;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: rgb(5, 5, 5);
@@ -105,7 +122,7 @@ a:hover{
 #servingsize
 {
     .position();
-    top: 510px;
+    top: 530px;
     font-size: 18px;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: rgb(5, 5, 5);
@@ -118,7 +135,7 @@ a:hover{
 
 #content{
     .position();
-    top: 570px;
+    top: 590px;
     font-size: 18px;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: rgb(5, 5, 5);
@@ -127,4 +144,24 @@ a:hover{
 #subdiv{
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: red;
+}
+
+#ingredients
+{
+    position: @Position;
+    right: 100px;
+    top: 350px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, .5);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(5, 5, 5);
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+#subdiv2
+{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(182, 154, 129);
+    padding-bottom: 5px;
 }
