@@ -150,6 +150,7 @@ a:hover {
 #blog11:hover,
 #blog12:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 #rednewsdiv1 {
   position: absolute;

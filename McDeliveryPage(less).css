@@ -79,6 +79,7 @@ a:hover {
 }
 #button1:hover {
   background-color: black;
+  cursor: pointer;
 }
 .image3 {
   position: absolute;

@@ -43,8 +43,9 @@ a:hover {
   position: absolute;
   right: 150px;
   top: 250px;
+  z-index: 2;
 }
-#burgersandwraps {
+#burgers {
   text-decoration: underline;
   text-decoration-color: red;
   text-decoration-thickness: 2px;
@@ -52,7 +53,7 @@ a:hover {
   position: absolute;
   left: 150px;
   top: 180px;
-  font-size: 20px;
+  font-size: 25px;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #DB0007;
 }
@@ -126,4 +127,36 @@ a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #b69a81;
   padding-bottom: 5px;
+}
+.slide-nutrition {
+  position: absolute;
+  left: 150px;
+  top: 660px;
+  font-size: 13px;
+  z-index: 1;
+  background-color: red;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  border: 1px solid red;
+  border-radius: 60px;
+  width: 600px;
+  padding: 5px;
+  text-align: center;
+}
+#infobutton {
+  position: absolute;
+  top: 810px;
+  left: 600px;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 350px;
+  height: 50px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px;
+}
+#infobutton:hover {
+  background-color: black;
+  cursor: pointer;
 }

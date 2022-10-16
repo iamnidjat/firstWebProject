@@ -1,5 +1,6 @@
 @BlackColor: black;
 @RedColor: red;
+@WhiteColor: white;
 @Position: absolute;
 @FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 @LeftMargin: 120px;
@@ -74,13 +75,14 @@ a:hover{
     position: @Position;
     right: 150px;
     top: 250px;
+    z-index: 2;
 }
 
-#burgersandwraps{
+#burgers{
     .text-decorations();
     .position();
     top: 180px;
-    font-size: 20px;
+    font-size: 25px;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #DB0007;
 }
@@ -165,3 +167,42 @@ a:hover{
     -webkit-text-stroke-color: rgb(182, 154, 129);
     padding-bottom: 5px;
 }
+
+.slide-nutrition
+{
+    .position();
+    top: 660px;
+    font-size: 13px;
+    z-index: 1;
+    background-color: @RedColor;
+    -webkit-text-stroke-color: @WhiteColor;
+    -webkit-text-stroke-width: 1px;
+    border: 1px solid @RedColor;
+    border-radius: 60px;
+    width: 600px;
+    padding: 5px;
+    text-align: center;
+}
+
+#infobutton
+{
+    position: @Position;
+    top: 810px;
+    left: 600px;
+    background-color: @RedColor;
+    border: 1px solid @RedColor;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 350px;
+    height: 50px;
+    -webkit-text-stroke-color: @WhiteColor;
+    -webkit-text-stroke-width: 2px;
+}
+
+#infobutton:hover
+{
+    background-color: @BlackColor;
+    cursor: pointer;
+}
+
+

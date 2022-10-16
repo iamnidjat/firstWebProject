@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
   background-image: url(https://mcdindia.com/wp-content/uploads/2020/02/stores-background.jpg), url(https://mcdindia.com/wp-content/uploads/2020/02/happy-meal-celebration.svg);
-  background-position: right 10px, top 450px left 100px;
+  background-position: right -10px, top 480px left 200px;
   background-repeat: no-repeat;
 }
 .navigation-container {

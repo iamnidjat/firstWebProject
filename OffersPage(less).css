@@ -94,6 +94,7 @@ a:hover {
 }
 #subscribebutton:hover {
   background-color: black;
+  cursor: pointer;
 }
 @keyframes opacityAnimation {
   from {
