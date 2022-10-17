@@ -95,3 +95,36 @@ a:hover {
     opacity: 1;
   }
 }
+@media screen and (max-width: 700px) {
+  .image {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    background: white;
+  }
+  .image2 {
+    position: absolute;
+    left: 15px;
+  }
+  #order-title {
+    position: absolute;
+    left: 15px;
+  }
+  #div1 {
+    position: absolute;
+    left: 15px;
+  }
+  #div2 {
+    position: absolute;
+    left: 15px;
+  }
+  #button1 {
+    position: absolute;
+    left: 15px;
+    top: 670px;
+  }
+}

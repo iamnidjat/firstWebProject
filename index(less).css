@@ -64,3 +64,49 @@ a:hover {
   top: 0;
   z-index: 1;
 }
+@media screen and (max-width: 700px) {
+  .image {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    background: #e6b70c;
+  }
+  #value-meal {
+    position: absolute;
+    left: 15px;
+    top: 75px;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+  }
+  #announcment-div1 {
+    position: absolute;
+    left: 15px;
+    top: 155px;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    color: red;
+  }
+  #announcment-div2 {
+    position: absolute;
+    left: 15px;
+    top: 205px;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    color: red;
+  }
+  #background-video {
+    width: 95%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 15px;
+    top: 250px;
+    right: 0;
+    z-index: 1;
+  }
+}
