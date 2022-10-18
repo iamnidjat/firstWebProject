@@ -193,3 +193,64 @@ a:hover {
     opacity: 1;
   }
 }
+@media screen and (max-width: 700px) {
+  .image {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  body {
+    background-image: url(https://mcdindia.com/wp-content/uploads/2020/05/bg-happy-meal-app2x.jpg);
+    background-repeat: no-repeat;
+  }
+  .image2 {
+    position: absolute;
+    left: 125px;
+    top: 750px;
+  }
+  #div1 {
+    position: absolute;
+    left: 155px;
+    top: 950px;
+  }
+  .image3 {
+    position: absolute;
+    left: 125px;
+    top: 1100px;
+  }
+  #div2 {
+    position: absolute;
+    left: 110px;
+    top: 1300px;
+  }
+  .image4 {
+    position: absolute;
+    left: 125px;
+    top: 1450px;
+  }
+  #div3 {
+    position: absolute;
+    left: 135px;
+    top: 1650px;
+  }
+  .image5 {
+    position: absolute;
+    left: 125px;
+    top: 1800px;
+  }
+  #div4 {
+    position: absolute;
+    left: 140px;
+    top: 2000px;
+  }
+  .image6 {
+    position: absolute;
+    left: 125px;
+    top: 2150px;
+  }
+  #div5 {
+    position: absolute;
+    left: 150px;
+    top: 2350px;
+  }
+}

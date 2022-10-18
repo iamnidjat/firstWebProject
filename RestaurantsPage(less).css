@@ -2,8 +2,8 @@ body {
   animation: opacityAnimation 3s;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
-  background-image: url(https://mcdindia.com/wp-content/uploads/2020/02/stores-background.jpg), url(https://mcdindia.com/wp-content/uploads/2020/02/happy-meal-celebration.svg);
-  background-position: right -10px, top 480px left 200px;
+  background-image: url(https://mcdindia.com/wp-content/uploads/2020/02/happy-meal-celebration.svg), url(https://mcdindia.com/wp-content/uploads/2020/02/stores-background.jpg);
+  background-position: top 480px left 200px, left 470px top -10px;
   background-repeat: no-repeat;
 }
 .navigation-container {
@@ -88,5 +88,40 @@ select {
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 700px) {
+  .image {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  body {
+    height: 100%;
+    background: white;
+    background-image: url(https://mcdindia.com/wp-content/uploads/2020/02/happy-meal-celebration.svg);
+    background-position: top 200px left 50px;
+    background-repeat: no-repeat;
+  }
+  #select-city {
+    position: absolute;
+    left: 15px;
+    top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .custom-select {
+    position: absolute;
+    left: 15px;
+    top: 180px;
+    font-family: Arial;
+  }
+  select {
+    width: 250px;
+  }
+  .tooltip .tooltiptext {
+    width: 150px;
+    position: absolute;
+    left: 300px;
+    top: 160px;
   }
 }
