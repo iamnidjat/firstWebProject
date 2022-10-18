@@ -5,11 +5,6 @@
 @FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 @LeftMargin: 120px;
 
-// .flex-center {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
 body {
     animation: opacityAnimation 3s;
     font-family: @FontFamily;
@@ -79,11 +74,10 @@ a:hover{
 }
 
 #burgers{
-    .text-decorations();
     .position();
     top: 180px;
-    font-size: 25px;
-    -webkit-text-stroke-width: 1.5px;
+    font-size: 35px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #DB0007;
 }
 
@@ -205,6 +199,10 @@ a:hover{
     cursor: pointer;
 }
 
+.hamburger-menu
+{
+    visibility: hidden;
+}
 
 @media screen and (max-width: 700px) {
     .image{
@@ -276,15 +274,127 @@ a:hover{
         height: 300px;
         width: 300px;
     }
+
     .slide-nutrition
     {
-        visibility: hidden;
+        position: @Position;
+        left: 15px;
+        top: 900px;
+        height: 100px;
+        width: 430px;
     }
 
     #infobutton
     {
+        position: @Position;
+        left: 65px;
+        top: 1050px;
+    }
+
+    .navigation-container{
         visibility: hidden;
     }
 
+    .hamburger-menu
+    {
+        visibility:visible;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: @Position;
+        top: 20px;
+        left: 420px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: @Position;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: @Position;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: white;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 9999;
+      }
+
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .menu__item:hover {
+        background-color: white;
+      }
+
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+
+      .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    transition-duration: .25s;
+    }
+    .menu__box {
+    transition-duration: .25s;
+    }
+    .menu__item {
+    transition-duration: .25s;
+    }
+
+    #screennav{
+        .text-decorations();
+    }
 }
 
